@@ -1,9 +1,22 @@
 extends layout
 
 block content
-    div(class="container")
+    .container
         div(ng-controller="fanduelCtrl", ng-init="(initWeek('#{week}'))") Weeks: 
             a(ng-repeat="week in weeks track by $index", href="/week/{{week}}", class="btn  btn-default") {{week}}  
+            .clearfix
+            .col-sm-12
+                .col-md-6
+                |  
+                |             
+                .col-md-6.text-right
+                    a.btn.btn-primary(href='https://www.fanduel.com/entry/21738-212731407?invitedby=amizrac', target='_blank')
+                        | Week 9 Entry Link 
+                        i.glyphicon.glyphicon-new-window
+                    br
+                    |                
+                    |                  
+                    a(href='https://www.fanduel.com/entry/21738-212731407?invitedby=amizrac', target='_blank') https://www.fanduel.com/entry/21738-212731407?invitedby=amizrac
             .clearfix
                 .col-md-6
                     h2 Week {{week}} Results
