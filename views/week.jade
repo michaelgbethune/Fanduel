@@ -1,0 +1,56 @@
+extends layout
+
+block content
+    div(class="container")
+        div(ng-controller="fanduelCtrl", ng-init="(initWeek('#{week}'))") Weeks: 
+            a(ng-repeat="week in weeks track by $index", href="/week/{{week}}", class="btn  btn-default") {{week}}  
+            .clearfix
+                .col-md-6
+                    h2 Week {{week}} Results
+                    |             
+                    table.table.table-bordered
+                        tbody
+                            tr
+                                td
+                                |  
+                                |                    
+                                td Player
+                                |                     
+                                td FD Points Scored
+                                |                     
+                                td League Points Earned
+                            tr(ng-repeat="user in weeklyUsers track by $index")
+                                td {{$index+1}}
+                                |  
+                                td {{user.name}}
+                                |  
+                                td {{user.fd}}
+                                |  
+                                td {{user.lp}}
+                .col-md-6
+                    h2 Total Results After Week {{week}}
+                    |             
+                    table.table.table-bordered
+                        tbody
+                            tr
+                            td
+                            |  
+                            |                    
+                            td Player &nbsp;
+                                span(class="badge") wins
+                                br
+                                br
+                            |                     
+                            td FD Points Scored
+                            |                     
+                            td League Points Earned
+                            tr(ng-repeat="user in weeklyTotalUsers track by $index", ng-class="$index < 8 ? 'success' : ''")
+                                td {{$index+1}}
+                                |  
+                                td 
+                                    a(href="/player/{{user.name}}") {{user.name}} &nbsp;
+                                    span(ng-if="user.total.wins > 0", class="badge") {{user.total.wins}}
+                                |  
+                                td {{user.total.fd}}
+                                |  
+                                td {{user.total.lp}}

@@ -1,0 +1,23 @@
+body { font-family:'Open Sans';
+    font-size:20px; font-weight:300;
+    }
+      tr:hover {
+      background:#eee;
+      }
+      .highlight {
+      background:#d9edf7;
+      }
+body h2 {
+margin-top:0px;
+padding-top:0px;
+}
+a {
+outline:none;
+}
+a:hover {
+outline:none;
+text-decoration:none;
+}
+.table {
+color:#000;
+}

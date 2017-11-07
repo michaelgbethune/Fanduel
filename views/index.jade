@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    div(class="container")
+        div(ng-controller="fanduelCtrl") Weeks: 
+            a(ng-repeat="week in weeks track by $index", href="/week/{{week}}", class="btn  btn-default") {{week}}   

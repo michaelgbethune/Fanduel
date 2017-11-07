@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    .container
+        div(ng-controller="fanduelCtrl", ng-init="(initPlayer('#{player}'))") Weeks: 
+            a(ng-repeat="week in weeks track by $index", href="/week/{{week}}", class="btn  btn-default") {{week}}  
+            .container
+                .col-sm-6
+                    table.table.table-bordered
+                        tbody
+                            tr
+                                th(colspan="2").text-center
+                                    h1 #{player}
+                            tr
+                                td League Points: {{user.lp}}
+                                td Fanduel Points: {{user.fd}}        
+                .col-sm-6
+                    table.table.table-bordered
+                        tbody
+                            tr
+                                td Week
+                                |                 
+                                td Position
+                                |                 
+                                td Points
+                                | 
+                            tr(ng-repeat="week in playerData track by $index", ng-class="week.class")
+                                td {{$index+1}}
+                                |  
+                                td {{week.position}}
+                                |  
+                                td {{week.lp}}        

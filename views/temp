@@ -1,0 +1,196 @@
+      |         
+      .col-md-6
+        h2 Total Results After Week 8
+        |             
+        table.table.table-bordered
+          tbody
+            tr
+              td
+              |                     
+              td
+                | Player 
+                span.badge wins
+                br
+                br
+              |                     
+              td League Points
+              |                     
+              td Tie Breaker Points
+            |                 
+            tr.success(data-id='40', data-count='1')
+              td 1
+              td
+                a(target='_blank', href='/player.aspx?id=40') joeyfalg
+                |  
+                span.badge 1
+              |  
+              td 174
+              |  
+              td 968.72
+            tr.success(data-id='39', data-count='2')
+              td 2
+              td
+                a(target='_blank', href='/player.aspx?id=39')
+                  | gridking
+              |  
+              td 154
+              |  
+              td 912.44
+            tr.success(data-id='25', data-count='3')
+              td 3
+              td
+                a(target='_blank', href='/player.aspx?id=25') princess_toadstool
+                |  
+                span.badge 1
+              |  
+              td 150
+              |  
+              td 813.42
+            tr.success(data-id='30', data-count='4')
+              td 4
+              td
+                a(target='_blank', href='/player.aspx?id=30') dough_nut
+              |  
+              td 127
+              |  
+              td 878.20
+            tr.success(data-id='27', data-count='5')
+              td 5
+              td
+                a(target='_blank', href='/player.aspx?id=27') prezsid
+                |  
+                span.badge 1
+              |  
+              td 120
+              |  
+              td 837.10
+            tr.success(data-id='33', data-count='6')
+              td 6
+              td
+                a(target='_blank', href='/player.aspx?id=33') axis_of_ignorance
+              |  
+              td 118
+              |  
+              td 853.70
+            tr.success(data-id='36', data-count='7')
+              td 7
+              td
+                a(target='_blank', href='/player.aspx?id=36') dirtyseagulls
+                |  
+                span.badge 1
+              |  
+              td 116
+              |  
+              td 825.38
+            tr.success(data-id='32', data-count='8')
+              td 8
+              td
+                a(target='_blank', href='/player.aspx?id=32') thegee
+              |  
+              td 115
+              |  
+              td 855.26
+            tr(data-id='24', data-count='9')
+              td 9
+              td
+                a(target='_blank', href='/player.aspx?id=24') consistentlyinconsistent
+                |  
+                span.badge 1
+              |  
+              td 114
+              |  
+              td 828.20
+            tr(data-id='42', data-count='10')
+              td 10
+              td
+                a(target='_blank', href='/player.aspx?id=42') pbric
+              |  
+              td 103
+              |  
+              td 819.80
+            tr(data-id='37', data-count='11')
+              td 11
+              td
+                a(target='_blank', href='/player.aspx?id=37') quin1024
+              |  
+              td 97
+              |  
+              td 805.68
+            tr(data-id='23', data-count='12')
+              td 12
+              td
+                a(target='_blank', href='/player.aspx?id=23') amizrac
+                |  
+                span.badge 1
+              |  
+              td 96
+              |  
+              td 785.00
+            tr(data-id='41', data-count='13')
+              td 13
+              td
+                a(target='_blank', href='/player.aspx?id=41') ldelvecc
+              |  
+              td 95
+              |  
+              td 816.18
+            tr(data-id='38', data-count='14')
+              td 14
+              td
+                a(target='_blank', href='/player.aspx?id=38') mhaight88
+                |  
+                span.badge 1
+              |  
+              td 95
+              |  
+              td 741.32
+            tr(data-id='34', data-count='15')
+              td 15
+              td
+                a(target='_blank', href='/player.aspx?id=34') pink149
+              |  
+              td 86
+              |  
+              td 797.30
+            tr(data-id='31', data-count='16')
+              td 16
+              td
+                a(target='_blank', href='/player.aspx?id=31')  aclegend89
+                |  
+                span.badge 1
+              |  
+              td 83
+              |  
+              td 778.14
+            tr(data-id='28', data-count='17')
+              td 17
+              td
+                a(target='_blank', href='/player.aspx?id=28') rfang149
+              |  
+              td 73
+              |  
+              td 766.86
+            tr(data-id='26', data-count='18')
+              td 18
+              td
+                a(target='_blank', href='/player.aspx?id=26') siglerru
+              |  
+              td 72
+              |  
+              td 776.84
+            tr(data-id='35', data-count='19')
+              td 19
+              td
+                a(target='_blank', href='/player.aspx?id=35') scott395
+              |  
+              td 66
+              |  
+              td 691.54
+            tr(data-id='29', data-count='20')
+              td 20
+              td
+                a(target='_blank', href='/player.aspx?id=29') nagle13
+              |  
+              td 65
+              |  
+              td 771.02
